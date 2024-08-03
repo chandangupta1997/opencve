@@ -30,7 +30,7 @@ setup(
     description="CVE Alerting Platform",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/chandangupta1997/opencve.git",
+    url="https://github.com/opencve/opencve",
     packages=find_packages(),
     install_requires=requirements,
     extras_require={"dev": dev_requirements, "sendmail": sendmail_requirements},

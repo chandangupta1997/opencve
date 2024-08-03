@@ -127,7 +127,7 @@ class Config(object):
     # Mail
     EMAIL_ADAPTER = config.get("mail", "email_adapter", fallback="smtp")
     USER_EMAIL_SENDER_EMAIL = config.get(
-        "mail", "email_from", fallback="no-reply@opencve.io"
+        "mail", "email_from", fallback="no-reply@cve.malwarebucket.com"
     )
     MAIL_SERVER = config.get("mail", "smtp_server")
     MAIL_PORT = config.getint("mail", "smtp_port", fallback=465)
@@ -143,7 +143,7 @@ class Config(object):
         MAIL_PASSWORD = config.get("mail", "stmp_password")
 
     DEFAULT_MAIL_SENDER = config.get(
-        "mail", "email_from", fallback="no-reply@opencve.io"
+        "mail", "email_from", fallback="no-reply@cve.malwarebucket.com"
     )
 
     @staticmethod
