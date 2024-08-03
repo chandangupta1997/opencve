@@ -92,7 +92,7 @@ class Config(object):
     REPORTS_CLEANUP_DAYS = config.getint("core", "reports_cleanup_days", fallback=0)
 
     # Flask-User
-    USER_APP_NAME = "OpenCVE.io"
+    USER_APP_NAME = "Vuln DB"
     USER_ENABLE_CHANGE_USERNAME = False
     USER_ENABLE_MULTIPLE_EMAILS = True
     USER_AUTO_LOGIN_AFTER_CONFIRM = False
