@@ -1,6 +1,6 @@
 {% extends 'base_blank.html' %}
 
-{% block title %}Join Cve Malware Bucket- {{ super() }}{% endblock %}
+{% block title %}Join Vuln DB- {{ super() }}{% endblock %}
 
 {% block content %}
 {% from "_macros.html" import render_field %}
@@ -11,7 +11,7 @@
     <div class="register-box-body">
         <div class="register-logo">
             <img src="{{ url_for('static', filename='img/logo_full_48.png') }}" alt="Logo">
-            <a href="{{ url_for('main.home') }}">Cve Malware Bucket</a>
+            <a href="{{ url_for('main.home') }}">Vuln DB</a>
         </div>
         {% include 'flash_messages.html' %}
         <p class="login-box-msg"><strong>Register a new membership</strong></p>
