@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 #
 # This script initializes the environment to bootstrap OpenCVE stack and starts it
 # Run is as root or via sudo
@@ -34,10 +34,10 @@ set-airflow-start-date() {
 start-docker-stack() {
 
     echo "--> Get PG ENV variables from docker compose env file"
-    export $(grep -v '^#' .env | grep 'POSTGRES' | xargs -d '\n')
+    export $(grep -v '^#' ./env | grep 'POSTGRES' | xargs -d '\n')
 
     echo "--> Starting Docker compose stack"
-    docker compose up -d
+    docker compose up -d 
 
     echo "--> Adding Airflow connections"
     docker exec -it airflow-scheduler airflow connections add opencve_postgres --conn-uri postgres://$POSTGRES_USER:$POSTGRES_PASSWORD@postgres:5432/opencve
