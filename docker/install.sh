@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #
 # This script initializes the environment to bootstrap OpenCVE stack and starts it
 # Run is as root or via sudo
